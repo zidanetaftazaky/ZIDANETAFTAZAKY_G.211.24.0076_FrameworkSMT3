@@ -73,7 +73,7 @@ class PinjamController extends Controller
 
         if ($is_update == 0) {
             // Tambah data baru
-            if ($pinjam->insert_record($data)) {
+        if ($pinjam->insert_record($data)) {
                 // Arahkan ke daftar list
                 return redirect('pinjam'); 
             }
@@ -103,7 +103,7 @@ class PinjamController extends Controller
     public function delete($id, Pinjam_m $pinjam)
     {
         if ($pinjam->delete_by_id($id)) {
-            return redirect('pinjam');
+            return redirect('pinjam'); 
         }
     }
 }

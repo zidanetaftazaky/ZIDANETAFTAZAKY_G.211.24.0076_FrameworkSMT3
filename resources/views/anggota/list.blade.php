@@ -63,19 +63,19 @@
                             </span>
                         </td>
                         <td class="text-center">
-                            <a href="{{ url('anggota/edit/'.$row->ID_Anggota) }}" 
+                                <a href="{{ url('anggota/edit/'.$row->ID_Anggota) }}" 
                                class="btn btn-sm btn-warning me-1" 
                                style="border-radius: 0.5rem;"
-                               title="Edit">
+                                   title="Edit">
                                 Edit
-                            </a>
-                            <a href="{{ url('anggota/delete/'.$row->ID_Anggota) }}" 
-                               class="btn btn-sm btn-danger" 
+                                </a>
+                                <a href="{{ url('anggota/delete/'.$row->ID_Anggota) }}" 
+                                   class="btn btn-sm btn-danger" 
                                style="border-radius: 0.5rem;"
-                               onclick="return confirm('Yakin ingin menghapus anggota ini?')"
-                               title="Hapus">
+                                   onclick="return confirm('Yakin ingin menghapus anggota ini?')"
+                                   title="Hapus">
                                 Hapus
-                            </a>
+                                </a>
                         </td>
                     </tr>
                     @empty
